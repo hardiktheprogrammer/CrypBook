@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/crypBook-logo.png";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="upper">
         <div className="brand-container">
           <div className="brand">
-            <img src={logo} alt="logo" />
+            <img className="logo" src={logo} alt="logo" />
           </div>
           <p>Exclusive NFT Collection</p>
           <ul>

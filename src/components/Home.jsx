@@ -6,9 +6,9 @@ export default function Home() {
       <div className="container">
         <div className="content">
           <p className="sub-title">manage your business & Ledger with </p>
-          <h1 className="title">VishuS</h1>
+          <h1 className="title">Cryp <span className="book">Book</span></h1>
           <p className="description">
-          Manage your money in better & more secure  way with  VishuS-Protocol
+          Manage your money in better & more secure  way with  CrypBook-Protocol
           </p>
           <button>Sign Up</button>
         </div>

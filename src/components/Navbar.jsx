@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
-import logo from "../assets/VishuS-logo.png";
+import logo from "../assets/crypBook-logo.png";
 export default function Navbar({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
   return (
@@ -36,9 +36,6 @@ export default function Navbar({ changeTheme, currentTheme }) {
           </li>
           <li>
             <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#launch">Launch</a>
           </li>
           <li>
             <a href="#signup">Sign Up</a>

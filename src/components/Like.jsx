@@ -1,6 +1,6 @@
 import React from "react";
 import eth1 from "../assets/eth1.png";
-import eth2 from "../assets/eth2.png";
+import eth2 from "../assets/decentralized.png";
 
 export default function Like() {
   return (
@@ -8,7 +8,7 @@ export default function Like() {
       <div className="container">
         <div className="content">
           <div className="image">
-            <img src={eth1} alt="eth1" />
+          <img className = "decentralized" src={eth2} alt="eth2" />           
           </div>
           <h2 className="title">Completely Decetralized</h2>
           <p className="description">
@@ -23,7 +23,7 @@ export default function Like() {
         </div>
         <div className="content">
           <div className="image">
-            <img src={eth2} alt="eth2" />
+          <img src={eth1} alt="eth1" />
           </div>
           <h2 className="title">No Mediator</h2>
           <p className="description">
