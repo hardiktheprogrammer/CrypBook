@@ -6,7 +6,7 @@ export default function TransferUSDC(ammountinWEI, receiver) {
     amount: Moralis.Units.Token(ammountinWEI, 18),
     receiver: receiver,
     type: "erc20",
-    contractAddress: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    contractAddress: "0xe6b8a5CF854791412c1f6EFC7CAf629f5Df1c747",
   });
 
   return (
