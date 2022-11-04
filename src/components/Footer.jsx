@@ -1,31 +1,28 @@
 import React from "react";
 import logo from "../assets/crypBook-logo.png";
-import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaTiktok } from "react-icons/fa";
+import {  BsTwitter,  BsGithub } from "react-icons/bs";
 export default function Footer() {
   const links = [
     {
       title: "About",
       data: ["About", "Terms", "Legal"],
     },
-    {
-      title: "NFT",
-      data: ["OpenSea", "Maker", "Learn"],
-    },
+   
     {
       title: "Contact",
-      data: ["Press", "Support"],
+      data: ["Contact Us"],
     },
     {
       title: "Social",
-      data: ["Twiiter", "Instagram"],
+      data: ["Twiiter", "Github"],
     },
   ];
   const socialLink = [
-    <BsFacebook />,
+    
     <BsTwitter />,
-    <BsInstagram />,
-    <FaTiktok />,
+    <BsGithub/>
+    
+    
   ];
   return (
     <footer>
@@ -34,7 +31,7 @@ export default function Footer() {
           <div className="brand">
             <img className="logo" src={logo} alt="logo" />
           </div>
-          <p>Exclusive NFT Collection</p>
+          <p>Follow us on </p>
           <ul>
             {socialLink.map((link, index) => (
               <li key={index}>{link}</li>
@@ -57,8 +54,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="lower">
-        <span>&copy; Copyright 2022 NFT</span>
-        <span>Launching August 2022</span>
+        <span>&copy; Copyright 2022 CrypBook</span>
+        <span></span>
       </div>
     </footer>
   );

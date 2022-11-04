@@ -8,9 +8,10 @@ export default function Home() {
           <p className="sub-title">manage your business & Ledger with </p>
           <h1 className="title">Cryp <span className="book">Book</span></h1>
           <p className="description">
-          Manage your money in better & more secure  way with  CrypBook-Protocol
+         Make your life easy and stress-free
+with CrypBook suite of apps 
           </p>
-          <button>Sign Up</button>
+          <button>Connect Wallet</button>
         </div>
         <div className="image-container">
           <div className="image">
@@ -18,7 +19,7 @@ export default function Home() {
           </div>
           <div className="ellipse-container">
             <div className="ellipse pink"></div>
-            <div className="ellipse orange"></div>
+            <div className="ellipse orange "></div>
           </div>
         </div>
       </div>

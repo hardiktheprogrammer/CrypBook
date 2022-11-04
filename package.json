@@ -6,13 +6,19 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@web3auth/base": "^3.0.0",
+    "@web3auth/metamask-adapter": "^3.0.0",
+    "@web3auth/modal": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
     "scrollreveal": "^4.0.9",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3": "^1.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

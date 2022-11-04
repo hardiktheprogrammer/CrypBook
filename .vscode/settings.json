@@ -1,0 +1,6 @@
+{
+    "nuxt.isNuxtApp": false,
+    "livePreview.tasks.runTaskWithExternalPreview": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.fullReload": true
+}

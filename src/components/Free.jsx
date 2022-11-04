@@ -15,13 +15,13 @@ export default function Free() {
           <div className="image">
             <img src={icon} alt="icon" />
           </div>
-          <h2 className="title">Track Where your Money Goes</h2>
+          <h2 className="title">Record Transactions </h2>
           <p className="description">
-          If you're like most people, you have a hard time keeping track of your spending.<br></br>
-          You know you need to save money, but it's tough to do when you're not sure <br></br> where your money is going.<br></br>
+          Record debit and credit transactions for your customers send payment    <br></br>
+          And More<br></br>
           </p>
           <p className="description">
-          With VishuS, you can finally take control of your finances and start saving for the future.
+          {/* With CrypBook, you can finally take control of your finances and start saving for the future. */}
           </p>
           
          

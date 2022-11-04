@@ -8,15 +8,16 @@ export default function Release() {
     <div className="releases">
       <div className="release orange">
         <div className="content">
-          <h2 className="title">Receive and Send money</h2>
+          <h2 className="title">Manage Your Crypto</h2>
           <p className="description">
-          Pay anyone, everywhere. Make contactless & secure payments online using your crypto wallet 
-          . Plus, receive money from anyone. 
+         CryptoBook The ultimate way to manage your CryptCurrency
+
+
           </p>
           <p className="description">
-          VIshuS offers secure, transparent and risk-free banking at your fingertips. <br></br>
+         <br></br>
           </p>
-          <p className="description">With instant transacations  and cryptocureency experience the future of banking today.</p>
+          {/* <p className="description">With instant transacations  and cryptocureency experience the future of banking today.</p> */}
           
         </div>
         <div className="image">
@@ -30,16 +31,11 @@ export default function Release() {
           <div className="ellipse orange"></div>
         </div>
         <div className="content">
-          <h2 className="title">Lend money</h2>
+          <h2 className="title">100% Secure</h2>
           <p className="description">
-            We have released four limited edition NFTs early which can be bid on
-            via <a href="#">OpenSea</a>
+            CrypBook is the perfect solution for recording crypto transactions. It's easy to use and provides the security you need to keep your data safe.<a href="#">Free</a>
           </p>
-          <p className="description">
-            There will be the only four of these NFTs we ever make, so be sure
-            not to miss out!
-          </p>
-          {/* <p className="description">50% of proceeds go to charity.</p> */}
+          
           <a href="#" className="link">
             Check them out <BsArrowRight />
           </a>
