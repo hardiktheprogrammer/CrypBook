@@ -1,13 +1,7 @@
-import React from "react";
-import signup from "../assets/manage.png";
-// import { useEffect, useState } from "react";
-// import { Web3Auth } from "@web3auth/web3auth";
-export default function Signup() {
+import React from 'react';
+import signUpImage from "./../../assets/manage.png";
 
-  // const Home: NextPage = () => {
-  // const handleConnectWallet = async () => {
-  //   console.log("Connect Wallet working...")
-  // };  
+const SignUp = () => {
   return (
     <div className="signup">
       <div className="container">
@@ -21,7 +15,7 @@ export default function Signup() {
         </div>
         <div className="image-container">
           <div className="image">
-            <img className="manage" src={signup} alt="home image" />
+            <img className="manage" src={signUpImage} alt="home image" />
           </div>
           <div className="ellipse-container">
             <div className="ellipse pink"></div>
@@ -30,6 +24,7 @@ export default function Signup() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
+export default SignUp;

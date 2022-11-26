@@ -1,6 +1,6 @@
 import React from "react";
 import home from "../assets/landing-page-main.png";
-export default function Home() {
+export default function HomeComponent() {
   return (
     <div className="home">
       <div className="container">

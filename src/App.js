@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
-import Clients from "./components/Clients";
-import Footer from "./components/Footer";
-import Free from "./components/Free";
-import Home from "./components/Home";
-import Like from "./components/Like";
-import Navbar from "./components/Navbar";
-import Release from "./components/Release";
-import ScrollToTop from "./components/ScrollToTop";
-import Signup from "./components/Signup";
-import SuperRare from "./components/SuperRare";
-import scrollreveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// COMPONENTS
+import About from "./pages/About";
+import Features from "./pages/Features";
+import Home from "./pages/Home";
+import SignUp from "./pages/Signup";
+
+// CSS
 import "./sass/index.scss";
-function App() {
+import ScrollToTop from "./components/ScrollToTop";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+const App = () => {
   const [theme, setTheme] = useState("dark");
   const changeTheme = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   };
   useEffect(() => {
     const registerAnimations = () => {
-      const sr = scrollreveal({
+      const sr = ScrollReveal({
         origin: "bottom",
         distance: "80px",
         duration: 2000,
@@ -43,26 +46,22 @@ function App() {
     };
     registerAnimations();
   }, []);
-  window.setTimeout(() => {
-    const home = document.getElementsByClassName("home");
-    home[0].style.transform = "none";
-    const nav = document.getElementsByTagName("nav");
-    nav[0].style.transform = "none";
-  }, 1500);
+
   return (
-    <div data-theme={theme} className="app-container">
-      <ScrollToTop />
-      <Navbar changeTheme={changeTheme} currentTheme={theme} />
-      <Home />
-      <Free />
-      {/* <Clients /> */}
-      {/* <SuperRare /> */}
-      <Release />
-      <Like />
-      <Signup />
-      <Footer />
-    </div>
+    <Router>
+      <div data-theme={theme} className="app-container">
+        <ScrollToTop />
+        <Navbar changeTheme={changeTheme} currentTheme={theme} />
+        <Routes>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
