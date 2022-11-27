@@ -20,53 +20,52 @@
 
 // export default About;
 
-import React from "react"
-import "./index.scss"
-import priyanka from "./priyanka.png"
-import { AboutCard } from "../../components/ĀboutCard"
+import React from "react";
+import "./index.scss";
+import priyanka from "./priyanka.png";
+import { AboutCard } from "../../components/ĀboutCard";
 const About = () => {
   return (
     <>
-      <div className='home'>
-        <div className='about-main'>
+      <div className="home">
+        <div className="about-main">
           <AboutCard
-            name='Hardik'
-            role='Backend Developer'
-            linkedin='https://www.linkedin.com/in/tgoyal63'
-            github='https://github.com/tgoyal63'
-            email='mailto:tgoyal63@duck.com'
-            twitter='https://twitter.com/tgoyal63'
+            name="Hardik"
+            role="Backend Developer"
+            linkedin="https://www.linkedin.com/in/tgoyal63"
+            github="https://github.com/tgoyal63"
+            email="mailto:tgoyal63@duck.com"
+            twitter="https://twitter.com/tgoyal63"
             img={priyanka}
-            portfolio='https://flowcv.me/tgoyal63'
-            dashboard='tgoyal63'
+            portfolio="https://flowcv.me/tgoyal63"
+            dashboard="tgoyal63"
           />
           <AboutCard
-            name='Priyanka Prasad'
-            role='Web Designer'
-            linkedin='https://www.linkedin.com/in/prykdev/'
-            github='https://github.com/prykdev'
-            email='mailto:priyankaafssulur@gmail.com'
-            twitter='https://twitter.com/prykdev'
+            name="Priyanka Prasad"
+            role="Web Designer"
+            linkedin="https://www.linkedin.com/in/prykdev/"
+            github="https://github.com/prykdev"
+            email="mailto:priyankaafssulur@gmail.com"
+            twitter="https://twitter.com/prykdev"
             img={priyanka}
-            portfolio='https://priyankaprasad.vercel.app/'
-            dashboard='prykdev'
+            portfolio="https://priyankaprasad.vercel.app/"
+            dashboard="prykdev"
           />
           <AboutCard
-            name='Mayank'
-            role='Full Stack Developer'
-            linkedin='https://www.linkedin.com/in/ayu913'
-            github='https://github.com/ayu913'
-            email='mailto:ayushsingla909@gmail.com'
-            twitter='https://twitter.com/ayu913'
+            name="Mayank"
+            role="Full Stack Developer"
+            linkedin="https://www.linkedin.com/in/ayu913"
+            github="https://github.com/ayu913"
+            email="mailto:ayushsingla909@gmail.com"
+            twitter="https://twitter.com/ayu913"
             img={priyanka}
-            portfolio='https://ayudev.vercel.app/'
-            dashboard='ayu913'
+            portfolio="https://ayudev.vercel.app/"
+            dashboard="ayu913"
           />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;
