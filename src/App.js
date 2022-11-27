@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // COMPONENTS
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import SignUp from "./pages/Signup";
