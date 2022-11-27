@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Helmet } from "react-helmet";
 
 // ACTIONS
 import { getAllPosts } from "../../store/Actions/TestActions";
@@ -12,6 +13,9 @@ const Features = () => {
   }, []);
   return (
     <div className="featurePage">
+      <Helmet>
+        <title>CrypBook | Features</title>
+      </Helmet>
       <h3>Features Page</h3>
       <br />
       <h5>Showing Random Names from jsonPlaceholderAPI:</h5>
