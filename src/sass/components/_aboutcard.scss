@@ -1,0 +1,52 @@
+.about-card {
+    height: 30rem;
+    width: 20rem;
+    background-color: #14141E;
+    border-radius: 1rem;
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        padding-top: 1.5rem;
+        gap: 1rem;
+        border-radius: 1rem;
+
+    }
+    .about-portfolio {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .about-name {
+        background-color: #F16162;
+        height: 4rem;
+        display: flex;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        justify-content:center;
+        align-items :center;
+        font-size: 1.5rem;
+        font-weight:  bold;
+    }
+    .about-name2 {
+        display: flex;
+        justify-content:center;
+        font-size: 1rem;
+        color: wheat;
+        
+    }
+    .about-socials {
+        display:flex;
+        justify-content: center;
+        gap:1rem;
+        font-size: 1.3rem ;
+        color:#fff;
+    }
+    a{
+        text-decoration: none;
+        color:#F16162
+    }
+    a:hover{
+        color:#fff
+    }
+}
