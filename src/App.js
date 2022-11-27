@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import ScrollReveal from "scrollreveal";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// CSS
+import "./sass/index.scss";
 
+import React, {useEffect, useState} from "react";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {ToastContainer} from "react-toastify";
+import ScrollReveal from "scrollreveal";
+
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 // COMPONENTS
 import About from "./pages/About/About";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import SignUp from "./pages/Signup";
-
-// CSS
-import "./sass/index.scss";
-import ScrollToTop from "./components/ScrollToTop";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
