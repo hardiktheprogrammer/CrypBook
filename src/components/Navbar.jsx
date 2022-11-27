@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { ImSun } from "react-icons/im";
@@ -32,13 +33,16 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#features">Features</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="/features">Features</Link>
           </li>
           <li>
-            <a href="#signup">Sign Up</a>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/signup">Sign up</Link>
           </li>
           <li onClick={changeTheme}>
             {currentTheme === "dark" ? (
