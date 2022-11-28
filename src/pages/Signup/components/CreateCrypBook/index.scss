@@ -1,0 +1,41 @@
+.title {
+    font-weight:500;
+    font-size: medium;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    margin-bottom: 1rem;
+    .inputField {
+        flex: 1;
+        padding: 15px 20px ;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+}
+
+.getStarted {
+    display: flex;
+
+    .buttonField {
+        flex: 1;
+        padding: 15px 20px;
+        border-radius: 5px;
+        border: none;
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .disabledButton {
+        flex: 1;
+        padding: 15px 20px;
+        border-radius: 5px;
+        border: none;
+        background: gray;
+        color: white;
+        cursor: pointer;
+    }
+}

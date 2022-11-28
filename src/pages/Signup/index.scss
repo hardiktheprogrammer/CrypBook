@@ -1,0 +1,119 @@
+.signup {
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow-y: hidden;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-size: 18px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        .cardForm {
+            width: 70%;
+            height: 80%;
+            border-radius: 10px;
+            -webkit-box-shadow: -1px 2px 56px 2px rgba(0,0,0,0.12);
+            -moz-box-shadow: -1px 2px 56px 2px rgba(0,0,0,0.12);
+            box-shadow: -1px 2px 56px 2px rgba(0,0,0,0.12);
+            background: white;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            .brandRow {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .brandName {
+                    font-weight: 500;
+                    font-size: medium;
+                    color: #405AE4;
+                }
+            }
+            .formRow {
+                flex: 1;
+
+                .createCrypBookContainer {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2rem;
+                }
+            }
+        }
+      }
+      .image-container {
+        text-align: center;
+        position: relative;
+        z-index: 10;
+        .image {
+          img {
+          }
+        }
+        .ellipse-container {
+          .ellipse {
+            z-index: -1;
+            position: absolute;
+            height: 15rem;
+            width: 15rem;
+            filter: blur(100px);
+          }
+          .pink {
+            top: 40%;
+            right: 40%;
+            background-color: var(--pink);
+          }
+          .orange {
+            bottom: 40%;
+            left: 40%;
+            background-color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+  .manage{
+    height: 400px;
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .signup {
+      padding: 1rem;
+      position: relative;
+      overflow-x: hidden;
+      margin-top: 1rem;
+      .container {
+        font-size: 16px;
+        grid-template-columns: 0.7fr;
+        .image-container {
+          position: absolute;
+          right: -5%;
+          top: 30%;
+          .image {
+            img {
+              height: 10rem;
+            }
+          }
+          .ellipse-container {
+            .ellipse {
+              height: 6rem;
+              width: 6rem;
+              filter: blur(30px);
+            }
+            .pink {
+              right: 10%;
+            }
+            .orange {
+              left: -5%;
+            }
+          }
+        }
+      }
+    }
+}

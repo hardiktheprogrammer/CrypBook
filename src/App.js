@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // COMPONENTS
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import SignUp from "./pages/Signup";
@@ -48,19 +50,22 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div data-theme={theme} className="app-container">
-        <ScrollToTop />
-        <Navbar changeTheme={changeTheme} currentTheme={theme} />
-        <Routes>
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <>
+      <ToastContainer position="top-right" />
+      <Router>
+        <div data-theme={theme} className="app-container">
+          <ScrollToTop />
+          <Navbar changeTheme={changeTheme} currentTheme={theme} />
+          <Routes>
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
 };
 

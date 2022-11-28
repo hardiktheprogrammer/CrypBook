@@ -10,9 +10,14 @@
 @import "sections/clients";
 @import "sections/superRare";
 @import "sections/release";
-@import "sections/signup";
 @import "sections/like";
 
 // PAGES CSS
 @import "./../pages/About/index.scss";
 @import "./../pages/Features/index.scss";
+@import "./../pages/Signup/index.scss";
+
+@import "./../pages/Signup/components/CreateCrypBook/index.scss";
+
+@import "./../components/Spinner/index.scss";
+@import "../sass/components/aboutcard";
