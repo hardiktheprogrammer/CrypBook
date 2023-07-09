@@ -24,7 +24,7 @@
     "sass": "^1.55.0",
     "scrollreveal": "^4.0.9",
     "web-vitals": "^2.1.4",
-    "web3": "^1.8.0"
+    "web3": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
